@@ -2,6 +2,8 @@
 
 <ul>
   <% @category.soups.each do |soup| %>
-  <%= soup.name %>
-</ul>
+  <li><%= link_to soup.name, soup %></li>
 <%end%>
+</ul>
+
+<p> <%=  link_to "Back to soup categories", categories_path %> </p>
